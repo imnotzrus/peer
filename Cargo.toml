@@ -3,4 +3,46 @@ name = "peer"
 version = "0.1.0"
 edition = "2021"
 
-[dependencies]
+[dependencies.tokio]
+version = "*"
+features = [
+  "full"
+]
+
+[dependencies.libp2p]
+version = "*"
+features = [
+  "dcutr",
+  "dns",
+  "ed25519",
+  "gossipsub",
+  "identify",
+  "json",
+  "kad",
+  "macros",
+  "mdns",
+  "memory-connection-limits",
+  "metrics",
+  "noise",
+  "quic",
+  "relay",
+  "rendezvous",
+  "request-response",
+  "serde",
+  "tcp",
+  "tls",
+  "tokio",
+  "uds",
+  "wasm-bindgen",
+  "websocket-websys",
+  "websocket",
+  "webtransport-websys",
+  "yamux",
+  "upnp",
+]
+
+[dependencies.ractor]
+version = "*"
+features = [
+  "blanket_serde"
+]
